@@ -11,7 +11,7 @@ services:
       - ./:/app
 
   php:
-    image: php:7.0-fpm
+    build: docker/php-fpm
     volumes:
       - ./:/app
     working_dir: /app
